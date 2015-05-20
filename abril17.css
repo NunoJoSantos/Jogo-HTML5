@@ -1,0 +1,65 @@
+#container
+{
+    width: 90%;
+    border: 1px solid orange;
+    margin:auto;
+    min-width: 320px;
+    min-height: 480px;
+}
+
+
+.perguntas{
+    /*min-width: inherit;*/
+    
+    height: 142px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid orange;
+}
+
+.figura{
+    
+    width: 210px;
+    height: 140px;
+    background-color: orange;
+    float:left;
+    overflow:hidden;
+}
+
+.figura.fig{    
+    width: 200px;/* 98%;*/
+    /*min-width: 100px;*/
+    height: 98%;
+    border: 1px solid #c3c3c3;
+    
+}
+
+.opcoes{
+    /*width: 74.5%;*/
+    height: available;
+    background-color: white;
+    padding: 5px;
+    margin-left: 30px;
+    overflow:hidden;
+}
+
+#areaBotao{
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+.botao{
+   width: fit-content;
+   height: 40px;
+   border: 1px solid orange;
+   color: orange;
+   background-color: white;
+}
+
+.opcerta {
+
+}
+
+.operrada {
+
+}

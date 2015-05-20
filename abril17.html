@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Múltipla Escolha</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="abril17.css">
+        
+    </head>
+    <body>
+        <div id="container">
+            <div id="cabeca">
+                <p align="center" style="font-size: 28px;" >Jogos das Figuras</p>
+            </div>
+            <div id="conteudo" class="cont">
+                <div class="perguntas">
+                    <div class="figura">
+                        <canvas id="cvsRectangulo" class="fig">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+                    <div id="figRec" class="opcoes">
+                        <p>Escolha uma das opções: </p>
+                        <form id="formRec">
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Circulo<br/></label>
+                            <label><input name="figGeo" type="radio" class="opcerta" value="10"/> Rectangulo<br/></label>
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Quadrado<br/></label>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="perguntas">
+                    <div class="figura">
+                        <canvas id="cvsCirculo" class="fig">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+                    <div id="figCirc" class="opcoes">
+                        <p>Escolha uma das opções: </p>
+                        <form id="formCirc">
+                            <label><input name="figGeo" type="radio" class="opcerta" value="10"/> Circulo<br/></label>
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Rectangulo<br/></label>
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Quadrado<br/></label>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="perguntas">
+                    <div class="figura">
+                        <canvas id="cvsTriangulo" class="fig">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+                    <div id="figTri" class="opcoes">
+                        <p>Escolha uma das opções: </p>
+                        <form id="formTri">
+                            <label><input name="figGeo" type="radio"  class="opcerta" value="10"/> Triangulo<br/></label>
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Rectangulo<br/></label>
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Quadrado<br/></label>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="perguntas">
+                    <div class="figura">
+                        <canvas id="cvsParalel" class="fig">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+                    <div id="figPara" class="opcoes">
+                        <p>Escolha uma das opções: </p>
+                        <form id="formPara">
+                            <label><input name="figGeo" type="radio"  class="operrada" value="0"/> Cubo<br/></label>
+                            <label><input name="figGeo" type="radio" class="opcerta" value="10"/> Paralelepipedo<br/></label>
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Prisma<br/></label>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="perguntas">
+                    <div class="figura">
+                        <canvas id="cvsPiramide" class="fig">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+                    <div id="figPiram" class="opcoes">
+                        <p>Escolha uma das opções: </p>
+                        <form id="formPiram">
+                            <label><input name="figGeo" type="radio"  class="opcerta" value="10"/> Piramide<br/></label>
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Cone<br/></label>
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Cubo<br/></label>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="perguntas">
+                    <div class="figura">
+                        <canvas id="cvsQuadrado" class="fig">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+                    <div id="figQuad" class="opcoes">
+                        <p>Escolha uma das opções: </p>
+                        <form id="formQuad">
+                            <label><input name="figGeo" type="radio"  class="operrada" value="0"/> Triangulo<br/></label>
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Rectangulo<br/></label>
+                            <label><input name="figGeo" type="radio" class="opcerta" value="10"/> Quadrado<br/></label>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="perguntas">
+                    <div class="figura">
+                        <canvas id="cvsCilindro" class="fig">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+                    <div id="figCil" class="opcoes">
+                        <p>Escolha uma das opções: </p>
+                        <form id="formCil">
+                            <label><input name="figGeo" type="radio"  class="operrada" value="0"/> Triangulo<br/></label>
+                            <label><input name="figGeo" type="radio" class="operrada" value="0"/> Rectangulo<br/></label>
+                            <label><input name="figGeo" type="radio" class="opcerta" value="10"/> Cilindro<br/></label>
+                        </form>
+                        
+                    </div>
+                </div>
+                
+                                
+            </div>
+            <div id="areaBotao">
+                    <input type="button" id="botao" class="botao" onclick="calcPontos();" value="RESULTADO"/>
+                    <input type="button" id="reload" class="botao" hidden onclick="window.location.reload();"  value="JOGAR NOVAMENTE"/>
+                </div>
+            <div id="footer">
+            </div>
+        </div>
+        <script type="text/javascript" src="abril17.js"></script>
+        <script>
+            var button = document.getElementById('botao');
+            var reload = document.getElementById('reload');
+            button.addEventListener('click',hideshow,false);
+
+            function hideshow() {
+                document.getElementById('botao').style.display = 'block';
+                this.style.display = 'none';
+                reload.style.display = "inline-block";
+            }
+            var form1 = document.getElementById('figRec').querySelector('form'),
+                form2 = document.getElementById('figCirc').querySelector('form'),
+                form3 = document.getElementById('figTri').querySelector('form'),
+                form4 = document.getElementById('figPara').querySelector('form'),
+                form5 = document.getElementById('figPiram').querySelector('form'),
+                form6 = document.getElementById('figQuad').querySelector('form'),
+                form7 = document.getElementById('figCil').querySelector('form');
+            var div = document.getElementById("conteudo");
+            function shuffle( formQualquer){
+                for(var i = formQualquer.children.length; i >= 0; i--) {
+                    formQualquer.appendChild(formQualquer.children[Math.random() * i | 0]);
+                }
+            }
+            shuffle(form1);
+            shuffle(form2);
+            shuffle(form3);
+            shuffle(form4);
+            shuffle(form5);
+            shuffle(form6);
+            shuffle(form7);            
+            shuffle(div);
+            
+        </script>
+    </body>
+</html>
